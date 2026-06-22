@@ -1,10 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-content">
-        <h1>Best Preschool & Day Care Centre for Your Child</h1>
+        <h1>R&apos; Saplings KidZ PreSchool & DayCare</h1>
+
+        <p className="hero-tagline" style={{ fontSize: "1.4rem", color: "#2a316b", marginBottom: "1.5rem", fontWeight: "bold" }}>
+          Best Preschool & Day Care Centre for Your Child
+        </p>
 
         <p className="hero-subtitle">
           <span className="badge">LIVE CCTV</span>
@@ -15,9 +20,9 @@ export default function Hero() {
           <span>6 Months+ Children</span>
         </p>
 
-        <button className="btn-primary">
-          View Fee Structure
-        </button>
+        <Link href="/contact" className="btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
+          Join our Family
+        </Link>
       </div>
 
       <div className="hero-image-wrapper">
@@ -42,40 +47,6 @@ export default function Hero() {
             d="M0,50 C120,80 240,20 360,50 C480,80 600,20 720,50 C840,80 960,20 1080,50 C1200,80 1320,20 1440,50 L1440,100 L0,100 Z"
           />
         </svg>
-
-        <div className="stats-container">
-          <div className="stat-item">
-            <div className="stat-icon bg-orange">👨‍👩‍👧‍👦</div>
-            <div className="stat-text">
-              <h3>22,000+</h3>
-              <p>Trusting Parents</p>
-            </div>
-          </div>
-
-          <div className="stat-item">
-            <div className="stat-icon bg-teal">🏫</div>
-            <div className="stat-text">
-              <h3>35+</h3>
-              <p>Centres</p>
-            </div>
-          </div>
-
-          <div className="stat-item">
-            <div className="stat-icon bg-blue">🏆</div>
-            <div className="stat-text">
-              <h3>72+</h3>
-              <p>Awards</p>
-            </div>
-          </div>
-
-          <div className="stat-item">
-            <div className="stat-icon bg-purple">👍</div>
-            <div className="stat-text">
-              <h3>22+</h3>
-              <p>Years of Trust</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

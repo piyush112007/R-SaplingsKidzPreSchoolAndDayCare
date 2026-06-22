@@ -1,21 +1,29 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="nav-logo">
-        🌈 Bright Futures
-      </div>
+      <Link href="/" className="nav-logo" style={{ display: "flex", alignItems: "center", cursor: "pointer" }}>
+        <Image
+          src="/assets/logoWbg.png"
+          alt="R' Saplings KidZ PreSchool & DayCare Logo"
+          width={280}
+          height={90}
+          priority
+          className="logo-img"
+        />
+      </Link>
 
       <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#learning">Learning</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#about">About</a></li>
+        <li><Link href="/about">Our Roots</Link></li>
+        <li><Link href="/gallery">Life at R'saplings</Link></li>
+        <li><Link href="/testimonials">Parents Echoes</Link></li>
       </ul>
 
-      <button className="nav-btn">
-        Book a Tour
-      </button>
+      <Link href="/contact" className="nav-btn">
+        Join our Family
+      </Link>
     </nav>
   );
 }

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    text: `Bright Futures was my husband's first choice for both of our children. Having attended the nursery, he emphasized the importance of ensuring that our children experienced a classical form of tried and tested learning while in an environment that respected traditional values.`,
+    text: `R' Saplings KidZ was my husband's first choice for both of our children. Having attended the nursery, he emphasized the importance of ensuring that our children experienced a classical form of tried and tested learning while in an environment that respected traditional values.`,
     author: "FARIDA TATA",
   },
   {
@@ -49,7 +49,7 @@ export default function Testimonials() {
     <section
       className="testimonials"
        id="reviews"
->
+    >
 
       {/* Decorative Assets */}
 

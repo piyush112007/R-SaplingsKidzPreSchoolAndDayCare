@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import JourneySection from "@/components/JourneySection";
+import TrustSection from "@/components/TrustSection";
 import Philosophy from "@/components/Philosophy";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
@@ -12,7 +12,7 @@ export default function Home() {
 
   <Hero />
 
-  <JourneySection />
+  <TrustSection />
 
   <Philosophy />
 
