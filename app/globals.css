@@ -64,9 +64,9 @@ a {
 }
 
 .hero {
-  background-image:url(/assets/hero_bg.png);
-  background-position:center 40%;
-  background-repeat:no-repeat;
+  background-image: linear-gradient(to right, #ffde59, rgba(255, 222, 89, 0)), url('/assets/hero_bg.png');
+  background-size: cover;
+  background-position: center;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -78,6 +78,7 @@ a {
 
 .hero-content {
   max-width: 50%;
+  position: relative;
   z-index: 2;
 }
 
@@ -675,48 +676,6 @@ a {
 }
 
 
-/* ===== SCHOOL BUS IMAGE ===== */
-.hero-image-wrapper {
-  max-width: 48%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
-.school-bus {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  object-fit: contain;
-
-  filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.15));
-
-  animation: busFloat 4s ease-in-out infinite;
-}
-
-@keyframes busFloat {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-}
-
-/* Mobile */
-@media (max-width: 992px) {
-  .hero-image-wrapper {
-    max-width: 100%;
-    margin-top: 2rem;
-  }
-
-  .school-bus {
-    max-width: 420px;
-  }
-}
 
 .btn-primary {
   background: #ff6b2b;
@@ -1161,9 +1120,9 @@ a {
   align-items: center;
   justify-content: space-between;
 
-  padding: 12px 7%;
+  padding: 2px 7%;
 
-  border-radius: 0 0 40px 40px;
+  border-radius: 0;
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
