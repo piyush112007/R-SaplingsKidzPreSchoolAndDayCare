@@ -7,7 +7,15 @@ export default function Hero() {
       <div className="hero-content">
         <h1>R&apos; Saplings KidZ PreSchool & DayCare</h1>
 
-        <p className="hero-tagline" style={{ fontSize: "1.4rem", color: "#2a316b", marginBottom: "1.5rem", fontWeight: "bold" }}>
+        <p
+          className="hero-tagline"
+          style={{
+            fontSize: "1.4rem",
+            color: "#2a316b",
+            marginBottom: "1.5rem",
+            fontWeight: "bold",
+          }}
+        >
           Best Preschool & Day Care Centre for Your Child
         </p>
 
@@ -20,21 +28,25 @@ export default function Hero() {
           <span>6 Months+ Children</span>
         </p>
 
-        <Link href="/contact" className="btn-primary" style={{ display: "inline-block", textDecoration: "none" }}>
+        <Link
+          href="/contact"
+          className="btn-primary"
+          style={{ display: "inline-block", textDecoration: "none" }}
+        >
           Join our Family
         </Link>
       </div>
 
       <div className="hero-image-wrapper">
-  <Image
-    src="/assets/school_bus.png"
-    alt="School Bus"
-    width={700}
-    height={500}
-    className="school-bus"
-    priority
-  />
-</div>
+        <Image
+          src="/assets/school_bus.png"
+          alt="School Bus"
+          width={700}
+          height={500}
+          className="school-bus"
+          priority
+        />
+      </div>
 
       <div className="hero-bottom-clouds">
         <svg
@@ -43,7 +55,7 @@ export default function Hero() {
           preserveAspectRatio="none"
         >
           <path
-            fill="#ffffff"
+            fill="#53bfd5"
             d="M0,50 C120,80 240,20 360,50 C480,80 600,20 720,50 C840,80 960,20 1080,50 C1200,80 1320,20 1440,50 L1440,100 L0,100 Z"
           />
         </svg>

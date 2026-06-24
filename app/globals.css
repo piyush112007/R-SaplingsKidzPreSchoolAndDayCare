@@ -26,13 +26,23 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--foreground);
-  background: var(--background);
+  /* background: var(--background); */
+  background: #53bfd5;
   font-family: var(--font-body), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6, .hero-tagline, .journey-tag, .pillars-tag, .quote-author {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-tagline,
+.journey-tag,
+.pillars-tag,
+.quote-author {
   font-family: var(--font-headings), cursive;
 }
 
@@ -61,6 +71,7 @@ a {
   align-items: center;
   padding: 4rem 10% 8rem;
   min-height: 60vh;
+  padding-top: 8rem;
 }
 
 .hero-content {
@@ -172,7 +183,7 @@ a {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 4rem 10% 8rem;
+    padding: 8rem 10% 8rem;
   }
 
   .hero-content,
@@ -186,6 +197,10 @@ a {
 
   .hero h1 {
     font-size: 2.5rem;
+  }
+  .hero-bottom-clouds {
+    position: absolute;
+    left: -50%;
   }
 }
 
@@ -286,6 +301,8 @@ a {
 }
 
 .site-footer {
+  /* background: #53bfd5; */
+
   background: #1a1a1a;
   color: #e2e8f0;
   padding: 5rem 0 2rem 0;
@@ -550,6 +567,7 @@ a {
   position: relative;
   text-align: left;
   max-width: 900px;
+  height: 300px;
   margin: auto;
   transition: all 0.35s ease;
 }
@@ -584,8 +602,7 @@ a {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px)
-      translateX(15px);
+    transform: translateY(-20px) translateX(15px);
   }
   100% {
     transform: translateY(0);
@@ -650,6 +667,9 @@ a {
   .testimonials h2 {
     font-size: 2.5rem;
   }
+  .testimonial-card {
+    overflow: scroll;
+  }
 }
 
 /* ===== SCHOOL BUS IMAGE ===== */
@@ -713,10 +733,13 @@ a {
 /* TRUST SECTION */
 .trust-section {
   padding: 100px 10% 120px;
-  background: #fffdf6;
+  /* background: #fffdf6; */
+  /* background: #53bfd5; */
+
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 4px solid #ff6b2b;
 }
 
 .trust-tag {
@@ -811,8 +834,13 @@ a {
 }
 
 @keyframes starPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
 }
 
 .trust-grid {
@@ -880,9 +908,15 @@ a {
 }
 
 @keyframes floatDeco {
-  0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(3deg); }
-  100% { transform: translateY(0px) rotate(0deg); }
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
 }
 
 @media (max-width: 992px) {
@@ -903,7 +937,7 @@ a {
   .trust-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .trust-image-container {
     height: 350px;
   }
@@ -918,7 +952,9 @@ a {
 .pillars-tag {
   display: inline-block;
   padding: 10px 20px;
-  background: #ffe4e1;
+  /* background: #ffe4e1; */
+  /* background: #53bfd5; */
+
   color: #ff5f7e;
   border-radius: 30px;
   font-weight: 700;
@@ -949,19 +985,18 @@ a {
   background: white;
   padding: 35px;
   border-radius: 25px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.08);
-  transition: all .35s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
   cursor: pointer;
   min-height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .pillar-card:hover {
   transform: translateY(-12px) rotate(-2deg);
-  box-shadow: 0 20px 40px rgba(0,0,0,.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .pillar-card:nth-child(2),
@@ -1010,7 +1045,10 @@ a {
 /* LEARNING PILLARS IMPROVEMENTS */
 .pillars-section {
   padding: 80px 8%;
-  background: #fffef8;
+  /* background: #fffef8; */
+  background: #53bfd5;
+  border-bottom: 4px solid #ff6b2b;
+
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1068,7 +1106,8 @@ a {
 
 /* Animations */
 @keyframes floatStar {
-  0%,100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -1077,7 +1116,8 @@ a {
 }
 
 @keyframes floatHeart {
-  0%,100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -1106,10 +1146,10 @@ a {
 
 /* PLAYFUL NAVBAR */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
-
+  width: 100%;
   background: #f8f8f8;
   overflow: hidden;
 
@@ -1121,7 +1161,7 @@ a {
 
   border-radius: 0 0 40px 40px;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .nav-logo {
@@ -1149,7 +1189,7 @@ a {
   font-weight: 700;
   text-decoration: none;
   position: relative;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -1168,7 +1208,7 @@ a {
   background: #ff6b2b;
   border-radius: 10px;
 
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav-links a:hover::after {
@@ -1190,7 +1230,7 @@ a {
   cursor: pointer;
 
   box-shadow: 0 5px 0 #d84d14;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav-btn:hover {
@@ -1239,7 +1279,9 @@ a {
   font-size: 1rem !important;
   font-family: inherit !important;
   outline: none !important;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease !important;
   width: 100% !important;
 }
 
