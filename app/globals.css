@@ -74,7 +74,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 12rem 10% 10rem;
-  min-height: 40vh;
+  height: 100vh;
   padding-top: 8rem;
 }
 
