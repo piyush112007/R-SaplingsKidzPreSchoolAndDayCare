@@ -25,7 +25,6 @@ export default function AboutPage() {
             position: "relative",
             textAlign: "center",
             overflow: "hidden",
-            borderBottom: "4px solid #ff6b2b",
           }}
         >
           <div
@@ -98,8 +97,7 @@ export default function AboutPage() {
         <section
           style={{
             padding: "4rem 10%",
-            backgroundColor: "#53bfd5",
-            borderBottom: "4px solid #ff6b2b",
+            backgroundColor: "#e8f5e9",
           }}
         >
           <div
@@ -155,9 +153,12 @@ export default function AboutPage() {
                   fontSize: "1.05rem",
                 }}
               >
-                To create a magical space where children love to discover, learn
-                through play, and develop a lifelong passion for learning,
-                creating a beautiful foundation for a bright future.
+                To provide a caring, secure, and engaging environment where
+                every child learns through play, exploration, and meaningful
+                experiences. Through passionate educators, individualized
+                attention, and strong partnerships with families, we foster each
+                child's social, emotional, physical, and intellectual
+                development.
               </p>
             </div>
 
@@ -217,7 +218,7 @@ export default function AboutPage() {
         <Philosophy />
 
         {/* Child Development Journey */}
-        <TrustSection />
+        {/* <TrustSection /> */}
 
         {/* Meet our Team Intro */}
         <TeachersSection />

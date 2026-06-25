@@ -78,7 +78,6 @@ export default function TestimonialsPage() {
             position: "relative",
             textAlign: "center",
             overflow: "hidden",
-            borderBottom: "4px solid #ff6b2b",
           }}
         >
           <div

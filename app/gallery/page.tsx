@@ -69,7 +69,7 @@ const GALLERY_ITEMS = [
     description: "Learning about sea creatures and painting friendly fish.",
     emoji: "🐟",
     bgColor: "#e0f7fa",
-    borderColor: "#00bcd4",
+    borderColor: "#d4009f",
     asset: "/assets/fish.png",
   },
 ];
@@ -97,7 +97,6 @@ export default function GalleryPage() {
             position: "relative",
             textAlign: "center",
             overflow: "hidden",
-            borderBottom: "4px solid #ff6b2b",
           }}
         >
           <div
