@@ -197,12 +197,16 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <p className="copyright">
-            © {new Date().getFullYear()} R&apos; Saplings KidZ PreSchool &
-            DayCare. Made with <span className="heart-love">❤️</span> by
-            Antilabs{" "}
+            © {new Date().getFullYear()}
+            <span> R&apos; Saplings KidZ PreSchool & DayCare.</span>
           </p>
+
+          <Link href="https://www.antilabs.in/">
+            {" "}
+            Made with <span className="heart-love">❤️</span> by{" "}
+            <b>Antilabs</b>{" "}
+          </Link>
           {/* <div className="footer-bottom-links">
-            <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Use</Link>
             <Link href="/sitemap">Sitemap</Link>
           </div> */}

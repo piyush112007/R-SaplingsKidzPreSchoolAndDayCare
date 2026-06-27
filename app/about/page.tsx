@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Philosophy from "@/components/Philosophy";
 import TrustSection from "@/components/TrustSection";
+import VisionMission from "@/components/VisionMission";
+import PrincipalSection from "@/components/PrincipalSection";
 import TeachersSection from "@/components/TeachersSection";
 
 export const metadata = {
@@ -94,7 +96,7 @@ export default function AboutPage() {
         </section>
 
         {/* Vision & Mission Cards */}
-        <section
+        {/* <section
           style={{
             padding: "4rem 10%",
             backgroundColor: "#e8f5e9",
@@ -212,10 +214,12 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Nurturing Pillars */}
-        <Philosophy />
+        {/* <Philosophy /> */}
+        <VisionMission />
+        <PrincipalSection />
 
         {/* Child Development Journey */}
         {/* <TrustSection /> */}
