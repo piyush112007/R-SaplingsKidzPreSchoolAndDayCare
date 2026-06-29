@@ -23,34 +23,24 @@ export default function Testimonials() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex(
-        (prev) => (prev + 1) % testimonials.length
-      );
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   const nextSlide = () => {
-    setCurrentIndex(
-      (prev) => (prev + 1) % testimonials.length
-    );
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prev) =>
-        (prev - 1 + testimonials.length) %
-        testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
     );
   };
 
   return (
-    <section
-      className="testimonials"
-       id="reviews"
-    >
-
+    <section className="testimonials" id="reviews">
       {/* Decorative Assets */}
 
       <Image
@@ -75,7 +65,7 @@ export default function Testimonials() {
         width={90}
         height={90}
         className="butterfly"
-     />
+      />
 
       <Image
         src="/assets/Ball.png"
@@ -105,27 +95,18 @@ export default function Testimonials() {
 
       <div className="testimonial-slider">
         <div className="testimonial-card">
-
           <span className="quote-top">❝</span>
 
-          <p className="quote-text">
-            {testimonials[currentIndex].text}
-          </p>
+          <p className="quote-text">{testimonials[currentIndex].text}</p>
 
-          <p className="quote-author">
-            ● {testimonials[currentIndex].author}
-          </p>
+          <p className="quote-author">● {testimonials[currentIndex].author}</p>
 
           <span className="quote-bottom">❞</span>
-
         </div>
       </div>
 
       <div className="slider-controls">
-        <button
-          className="arrow-btn"
-          onClick={prevSlide}
-        >
+        <button className="arrow-btn" onClick={prevSlide}>
           ←
         </button>
 
@@ -133,22 +114,13 @@ export default function Testimonials() {
           {testimonials.map((_, index) => (
             <span
               key={index}
-              className={`dot ${
-                currentIndex === index
-                  ? "active"
-                  : ""
-              }`}
-              onClick={() =>
-                setCurrentIndex(index)
-              }
+              className={`dot ${currentIndex === index ? "active" : ""}`}
+              onClick={() => setCurrentIndex(index)}
             />
           ))}
         </div>
 
-        <button
-          className="arrow-btn"
-          onClick={nextSlide}
-        >
+        <button className="arrow-btn" onClick={nextSlide}>
           →
         </button>
       </div>

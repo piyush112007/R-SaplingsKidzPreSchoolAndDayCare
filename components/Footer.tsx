@@ -77,16 +77,19 @@ export default function Footer() {
             <h4>Learning Paths</h4>
             <ul>
               <li>
-                <Link href="/about#learning">Toddler Program</Link>
+                <Link href="/Programs">Pre Nursery Program</Link>
               </li>
               <li>
-                <Link href="/about#learning">Preschool Program</Link>
+                <Link href="/Programs">Nursery Program</Link>
               </li>
               <li>
-                <Link href="/about#learning">Kindergarten</Link>
+                <Link href="/Programs">LKG Program</Link>
               </li>
               <li>
-                <Link href="/about#learning">Daycare Program</Link>
+                <Link href="/Programs">UKG Program</Link>
+              </li>
+              <li>
+                <Link href="/Programs">Class 1</Link>
               </li>
             </ul>
           </div>

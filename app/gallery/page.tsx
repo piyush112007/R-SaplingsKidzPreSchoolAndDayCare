@@ -53,7 +53,6 @@ const GALLERY_ITEMS = [
     category: "Art & Craft",
     description:
       "From festive mask-making to colorful celebrations, children express their imagination through creative art activities while building confidence and fine motor skills.",
-    emoji: "🏖️",
     bgColor: "#fffde7",
     borderColor: "#fbc02d",
     asset: "/assets/Gallery/Holi.png",
@@ -64,10 +63,19 @@ const GALLERY_ITEMS = [
     category: "Learning",
     description:
       "Republic Day celebrations help children understand the values of unity, respect, and patriotism through joyful performances, activities, and memorable moments shared with their teachers and friends.",
-    emoji: "🐟",
     bgColor: "#e0f7fa",
     borderColor: "#d4009f",
     asset: "/assets/Gallery/RepublicDay.jpeg",
+  },
+  {
+    id: 7,
+    title: "Families on Stage Together",
+    category: "Active Play",
+    description:
+      "Our Annual Function brings parents and children together through lively performances and interactive plays, creating joyful memories while encouraging teamwork, confidence, and meaningful family participation.",
+    bgColor: "#e0f7fa",
+    borderColor: "#d4009f",
+    asset: "/assets/Gallery/ParentsAct.jpg",
   },
 ];
 

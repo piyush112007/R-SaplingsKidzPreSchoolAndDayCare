@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Patrick_Hand, Nunito } from "next/font/google";
 import "./globals.css";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const patrickHand = Patrick_Hand({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
     <html lang="en" className={`${patrickHand.variable} ${nunito.variable}`}>
       <body>
         {children}
+        <FloatingWhatsApp />
       </body>
     </html>
   );

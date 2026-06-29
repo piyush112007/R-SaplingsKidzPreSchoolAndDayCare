@@ -5,8 +5,25 @@
 .background {
   position: relative;
   width: 100%;
-  min-height: 720px;
+  height: 720px;
   overflow: hidden;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.05);
+  transition:
+    opacity 1s ease,
+    transform 7s ease;
+  pointer-events: none;
+}
+
+.activeSlide {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  z-index: 2;
 }
 
 .backgroundImage {
@@ -24,19 +41,22 @@
 
 .content {
   position: relative;
-  z-index: 3;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 80px;
-  padding: 100px 8%;
-  min-height: 720px;
+  gap: clamp(2rem, 6vw, 5rem);
+  width: min(1400px, 92%);
+  margin: auto;
+  height: 100%;
 }
 
 .left {
   flex: 1;
-  padding-top: 20rem;
   max-width: 650px;
+  padding-top: 15rem;
+
+  animation: slideLeft 0.9s ease;
 }
 
 .title {
@@ -56,20 +76,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
+  animation: slideRight 0.9s ease;
+}
 .card {
   position: relative;
-  width: 380px;
-  height: 450px;
-  border-radius: 30px;
+  width: min(420px, 35vw);
+  aspect-ratio: 4/5;
+  border-radius: 28px;
   overflow: hidden;
-
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4);
 }
 
 .cardImage {
   object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.activeSlide .cardImage {
+  transform: scale(1.05);
 }
 
 .dots {
@@ -96,49 +121,91 @@
   width: 34px;
   background: #ffffff;
 }
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @media (max-width: 992px) {
+  .background {
+    height: auto;
+    min-height: 850px;
+  }
+
   .content {
     flex-direction: column-reverse;
     justify-content: center;
     text-align: center;
-    gap: 50px;
-    padding: 80px 6%;
-  }
-
-  .card {
-    width: min(380px, 90vw);
-    height: 420px;
+    gap: 3rem;
+    padding: 100px 0;
   }
 
   .left {
     max-width: 100%;
   }
 
-  .description {
-    font-size: 1rem;
+  .card {
+    width: min(420px, 85vw);
   }
 }
 
 @media (max-width: 600px) {
   .background {
-    min-height: auto;
+    min-height: 780px;
   }
 
   .content {
-    padding: 60px 20px 90px;
+    gap: 2rem;
+    padding: 80px 20px;
+  }
+
+  .title {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 
   .card {
     width: 100%;
-    height: 340px;
+    max-width: 320px;
   }
 
-  .title {
-    font-size: 2.2rem;
+  .dots {
+    bottom: 20px;
+  }
+}
+@media (min-width: 1600px) {
+  .background {
+    height: 850px;
   }
 
-  .description {
-    line-height: 1.7;
+  .content {
+    width: min(1500px, 90%);
+  }
+
+  .card {
+    width: 450px;
   }
 }
