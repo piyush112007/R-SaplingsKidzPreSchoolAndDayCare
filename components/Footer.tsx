@@ -61,6 +61,9 @@ export default function Footer() {
                 <Link href="/about">Our Roots</Link>
               </li>
               <li>
+                <Link href="/Programs">Programs</Link>
+              </li>
+              <li>
                 <Link href="/gallery">Life at R'saplings</Link>
               </li>
               <li>
