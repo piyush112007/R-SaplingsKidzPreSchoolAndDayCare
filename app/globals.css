@@ -451,8 +451,9 @@ a {
 /* Bottom Footer */
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: left;
+  gap: 15%;
+  /* align-items: center; */
   padding-top: 2rem;
   font-size: 0.9rem;
   color: #718096;

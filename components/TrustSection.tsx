@@ -12,19 +12,19 @@ export default function TrustSection() {
         "Every classroom activity is designed to spark creativity, curiosity, and confidence while ensuring children enjoy every moment of learning.",
     },
     {
-      image: "/assets/Ball.png",
+      image: "/assets/Gallery/ScienceExhib2.png",
       title: "Safe & Happy Environment",
       description:
         "A child-friendly campus with caring educators, modern classrooms, and secure surroundings where every child feels at home.",
     },
     {
-      image: "/assets/whyparentsChooseUs/IMG_8927.jpg",
+      image: "/assets/Gallery/ParentsAct.jpg",
       title: "Interactive Activities",
       description:
         "Music, dance, storytelling, art, and hands-on activities help children develop socially, emotionally, and intellectually.",
     },
     {
-      image: "/assets/whyparentsChooseUs/IMG_8927.jpg",
+      image: "/assets/Gallery/PrincipalIndi.jpg",
       title: "Celebrating Every Milestone",
       description:
         "From classroom achievements to annual events, every child's growth is celebrated with joy and encouragement.",

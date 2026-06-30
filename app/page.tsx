@@ -8,17 +8,17 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-  <Navbar />
+      <Navbar />
 
-  <Hero />
+      <Hero />
 
-  <TrustSection />
+      <TrustSection />
 
-  <Philosophy />
+      {/* <Philosophy /> */}
 
-  <Testimonials />
+      <Testimonials />
 
-  <Footer />
-</>
+      <Footer />
+    </>
   );
 }

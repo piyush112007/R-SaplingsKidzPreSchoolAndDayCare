@@ -9,68 +9,73 @@ import Image from "next/image";
 const GALLERY_ITEMS = [
   {
     id: 1,
-    title: "Colors of Spring",
+    title: "Little Superhero, Big Dreams",
     category: "Art & Craft",
     description:
-      "Finger painting and exploring water colors on recycled paper.",
-    emoji: "🎨",
+      "Creativity takes center stage as our young superheroes build confidence, imagination, and stage presence through fun-filled performances.",
     bgColor: "#ffebee",
     borderColor: "#e91e63",
-    asset: "/assets/flower1.png",
+    asset: "/assets/Gallery/FancyDress.jpeg",
   },
   {
     id: 2,
-    title: "Outdoor Exploration",
+    title: "A Day of Active Adventures",
     category: "Active Play",
     description:
-      "Chasing butterflies and exploring garden plants in our backyard.",
-    emoji: "🦋",
+      "Sports Day brings smiles, movement, and memorable moments as children participate in fun-filled races and team activities.",
     bgColor: "#e8f5e9",
     borderColor: "#4caf50",
-    asset: "/assets/butterfly.png",
+    asset: "/assets/Gallery/SportDay.jpeg",
   },
   {
     id: 3,
-    title: "Space & Rockets Day",
+    title: "Tiny Speakers, Big Confidence",
     category: "Learning",
     description:
-      "Building cardboard rockets and learning about the moon and stars.",
-    emoji: "🚀",
+      "Every presentation helps children build confidence, communication skills, and the courage to express their ideas with pride.",
     bgColor: "#e3f2fd",
     borderColor: "#2196f3",
-    asset: "/assets/rocket.png",
+    asset: "/assets/Gallery/Speech.jpeg",
   },
   {
     id: 4,
-    title: "Creative Storytelling",
-    category: "Art & Craft",
+    title: "Curious Minds at Work",
+    category: "Learning",
     description:
-      "Bringing favorite storybook characters to life with clay modeling.",
-    emoji: "🧸",
+      "Through fun science experiments and hands-on activities, children explore, observe, and discover the wonders of the world while developing curiosity and critical thinking.",
     bgColor: "#fff3e0",
     borderColor: "#ff9800",
-    asset: "/assets/mascot_lion.png",
+    asset: "/assets/Gallery/ScienceExhib2.png",
   },
   {
     id: 5,
-    title: "Fun in the Sandbox",
-    category: "Active Play",
+    title: "Colors of Creativity",
+    category: "Art & Craft",
     description:
-      "Building castles and learning motor skills through tactile play.",
-    emoji: "🏖️",
+      "From festive mask-making to colorful celebrations, children express their imagination through creative art activities while building confidence and fine motor skills.",
     bgColor: "#fffde7",
     borderColor: "#fbc02d",
-    asset: "/assets/Ball.png",
+    asset: "/assets/Gallery/Holi.png",
   },
   {
     id: 6,
-    title: "Exploring Aquatic Life",
+    title: "Celebrating Our Nation Together",
     category: "Learning",
-    description: "Learning about sea creatures and painting friendly fish.",
-    emoji: "🐟",
+    description:
+      "Republic Day celebrations help children understand the values of unity, respect, and patriotism through joyful performances, activities, and memorable moments shared with their teachers and friends.",
     bgColor: "#e0f7fa",
     borderColor: "#d4009f",
-    asset: "/assets/fish.png",
+    asset: "/assets/Gallery/RepublicDay.jpeg",
+  },
+  {
+    id: 7,
+    title: "Families on Stage Together",
+    category: "Active Play",
+    description:
+      "Our Annual Function brings parents and children together through lively performances and interactive plays, creating joyful memories while encouraging teamwork, confidence, and meaningful family participation.",
+    bgColor: "#e0f7fa",
+    borderColor: "#d4009f",
+    asset: "/assets/Gallery/ParentsAct.jpg",
   },
 ];
 
@@ -218,19 +223,19 @@ export default function GalleryPage() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    padding: "20px",
+                    // padding: "20px",
                     borderBottom: `2px dashed ${item.borderColor}`,
                   }}
                 >
                   <Image
                     src={item.asset}
                     alt={item.title}
-                    width={130}
-                    height={130}
+                    width={500}
+                    height={220}
                     style={{
-                      objectFit: "contain",
+                      objectFit: "cover",
                       maxHeight: "100%",
-                      transform: "scale(1.05)",
+                      overflow: "hidden",
                     }}
                   />
                 </div>
