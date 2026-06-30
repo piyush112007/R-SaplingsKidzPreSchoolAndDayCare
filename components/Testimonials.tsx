@@ -6,15 +6,15 @@ import Image from "next/image";
 const testimonials = [
   {
     text: `R' Saplings KidZ was my husband's first choice for both of our children. Having attended the nursery, he emphasized the importance of ensuring that our children experienced a classical form of tried and tested learning while in an environment that respected traditional values.`,
-    author: "FARIDA TATA",
+    author: "Deepak Singh",
   },
   {
     text: `An amazing place where my daughter has blossomed! The teachers are caring and the learning environment is vibrant and joyful.`,
-    author: "JOHN DOE",
+    author: "Hariom Rai",
   },
   {
     text: `We love the creative approach to learning. The facilities are wonderful and the community is welcoming.`,
-    author: "SARAH SMITH",
+    author: "Riya Sharma",
   },
 ];
 

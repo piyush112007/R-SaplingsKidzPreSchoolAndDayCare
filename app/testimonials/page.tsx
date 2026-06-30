@@ -5,47 +5,47 @@ import Image from "next/image";
 const DETAILED_TESTIMONIALS = [
   {
     text: "R' Saplings KidZ was our absolute best choice. The care and attention each child receives is phenomenal. My daughter loved going to school every single day, and her vocabulary and confidence blossomed in just a few months!",
-    author: "Farida Tata",
-    relation: "Mother of Zara (Pre-K)",
+    author: "Rashmi Jha",
+    relation: "Mother of Sakshi (Pre-K)",
     stars: 5,
     color: "#e8f5e9", // green pastel
     borderColor: "#a5d6a7",
   },
   {
     text: "An amazing place where my daughter has blossomed! The teachers are incredibly caring and the learning environment is vibrant, structured, and joyful. They truly understand early childhood development.",
-    author: "John Doe",
-    relation: "Father of Lily (Daycare)",
+    author: "Ankita Thakur",
+    relation: "Father of Disha (Daycare)",
     stars: 5,
     color: "#e3f2fd", // blue pastel
     borderColor: "#90caf9",
   },
   {
     text: "We love the creative approach to learning here. It's not just worksheets; they learn through hands-on activities, music, and social play. The community is welcoming and communication is top-notch.",
-    author: "Sarah Smith",
-    relation: "Mother of Leo (Toddler Program)",
+    author: "Ranjeet Singh ",
+    relation: "Father of Yash (Toddler Program)",
     stars: 5,
     color: "#fff3e0", // orange pastel
     borderColor: "#ffcc80",
   },
   {
     text: "The transition to preschool can be tough for a child, but the staff here made it so smooth and filled with love. My son talks about his teachers all weekend. Truly a second home for our little one.",
-    author: "Michael Chang",
-    relation: "Father of Arthur (Pre-K)",
+    author: "Deepak Singh",
+    relation: "Father of Jai (Pre-K)",
     stars: 5,
     color: "#fce4ec", // pink pastel
     borderColor: "#f8bbd0",
   },
   {
     text: "Every activity is thought out to stimulate intellectual and emotional growth. The facility is incredibly clean, safe, and colorful. I recommend R' Saplings KidZ to any parent looking for a premium start.",
-    author: "Elena Rostova",
-    relation: "Mother of Nikolai (Kindergarten)",
+    author: "Hariom Rai",
+    relation: "Father of Ashwini (Kindergarten)",
     stars: 5,
     color: "#efebe9", // brown/clay pastel
     borderColor: "#d7ccc8",
   },
   {
     text: "We were looking for a daycare that felt like a family, and we found it. The educators are deeply passionate and work closely with parents. The feedback we receive daily is detailed and comforting.",
-    author: "Priya Nair",
+    author: "Priya",
     relation: "Mother of Ishaan (Toddler)",
     stars: 5,
     color: "#fffde7", // yellow pastel
