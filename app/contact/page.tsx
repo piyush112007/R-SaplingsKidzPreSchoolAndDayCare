@@ -439,7 +439,7 @@ export default function ContactPage() {
                       required
                       value={formData.parentName}
                       onChange={handleInputChange}
-                      placeholder="e.g. Emma Watson"
+                      placeholder="e.g. John Doe"
                       className="contact-input"
                     />
                   </div>
