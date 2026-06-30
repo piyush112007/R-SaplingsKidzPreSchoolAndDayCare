@@ -316,7 +316,7 @@ export default function ContactPage() {
                       Learning Hours
                     </h4>
                     <p style={{ color: "#546e7a", fontSize: "0.95rem" }}>
-                      Monday - Friday: 8:00 AM - 6:00 PM
+                      Monday - Friday: 9:00 AM - 6:00 PM
                     </p>
                   </div>
                 </div>
