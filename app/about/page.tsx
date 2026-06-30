@@ -76,23 +76,6 @@ export default function AboutPage() {
           </div>
 
           {/* Cloud SVG separator */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              lineHeight: 0,
-            }}
-          >
-            <svg
-              viewBox="0 0 1440 100"
-              style={{ width: "100%", height: "60px", fill: "#ffffff" }}
-            >
-              <path d="M0,80 Q240,110 480,80 T960,80 T1440,80 L1440,100 L0,100 Z" />
-            </svg>
-          </div>
         </section>
 
         {/* Vision & Mission Cards */}
