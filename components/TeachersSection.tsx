@@ -6,24 +6,39 @@ import styles from "./TeachersSection.module.css";
 
 const teachers = [
   {
-    name: "Ms. Sophia",
-    role: "Principal / Founder",
-    image: "/teachers/sophia.jpg",
+    name: "Mrs. Jyoti Soni",
+    role: "Principal",
+    image: "/assets/principal.jpg",
   },
   {
-    name: "Ms. Clara",
+    name: "Ms. Archana",
     role: "Senior Educator",
-    image: "/teachers/clara.jpg",
+    image: "/assets/teachers/Archana.jpg",
   },
   {
-    name: "Ms. Lily",
-    role: "Creative Arts Lead",
-    image: "/teachers/lily.jpg",
+    name: "Ms. Asha",
+    role: "Senior Educator",
+    image: "/assets/teachers/Asha.jpg",
   },
   {
-    name: "Mr. Leo",
-    role: "Physical Play Instructor",
-    image: "/teachers/leo.jpg",
+    name: "Ms. Meetiksa",
+    role: "Senior Educator",
+    image: "/assets/teachers/Meetika.jpg",
+  },
+  {
+    name: "Mr. Pooja",
+    role: "Senior Educator",
+    image: "/assets/teachers/Pooja.jpg",
+  },
+  {
+    name: "Mr. Savita",
+    role: "Senior Educator",
+    image: "/assets/teachers/Savita.jpg",
+  },
+  {
+    name: "Mr. Shivkanya",
+    role: "Senior Educator",
+    image: "/assets/teachers/Shivkanya.jpg",
   },
 ];
 
